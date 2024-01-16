@@ -16,7 +16,7 @@ for(let i=0;i<fruit.length;i++)
     console.log(fruit[i]);
 }
 
-// Implement the code as in video but with one extra 'Edit' button in 'li'
+// Implement the code as in video but with one extra 'Edit' button in 'li
 
 const form = document.querySelector("form");
 const fruits = document.querySelector(".fruits");
@@ -35,12 +35,14 @@ form.addEventListener("submit", function(event){
 
 });
 
+
+// to delete
 fruits.addEventListener("click", function(event){
 
     if(event.target.classList.contains("delete-btn"))
     {
         const fruitToDelete = event.target.parentElement;
-        fruits.removeChild(fruitToDelete)
+        fruits.removeChild(fruitToDelete);
     }
 
 });
